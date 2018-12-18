@@ -24,6 +24,10 @@
         /// </summary>
         private void InitializeComponent() {
             this.panelCentral = new System.Windows.Forms.RichTextBox();
+            this.botonNorte = new System.Windows.Forms.Button();
+            this.botonOeste = new System.Windows.Forms.Button();
+            this.botonEste = new System.Windows.Forms.Button();
+            this.botonSur = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panelCentral
@@ -36,15 +40,60 @@
             this.panelCentral.TabIndex = 0;
             this.panelCentral.Text = "";
             // 
+            // botonNorte
+            // 
+            this.botonNorte.Location = new System.Drawing.Point(629, 413);
+            this.botonNorte.Name = "botonNorte";
+            this.botonNorte.Size = new System.Drawing.Size(75, 23);
+            this.botonNorte.TabIndex = 1;
+            this.botonNorte.Text = "Norte";
+            this.botonNorte.UseVisualStyleBackColor = true;
+            this.botonNorte.Click += new System.EventHandler(this.botonNorte_Click);
+            // 
+            // botonOeste
+            // 
+            this.botonOeste.Location = new System.Drawing.Point(554, 442);
+            this.botonOeste.Name = "botonOeste";
+            this.botonOeste.Size = new System.Drawing.Size(75, 23);
+            this.botonOeste.TabIndex = 2;
+            this.botonOeste.Text = "Oeste";
+            this.botonOeste.UseVisualStyleBackColor = true;
+            this.botonOeste.Click += new System.EventHandler(this.botonOeste_Click);
+            // 
+            // botonEste
+            // 
+            this.botonEste.Location = new System.Drawing.Point(703, 442);
+            this.botonEste.Name = "botonEste";
+            this.botonEste.Size = new System.Drawing.Size(75, 23);
+            this.botonEste.TabIndex = 3;
+            this.botonEste.Text = "Este";
+            this.botonEste.UseVisualStyleBackColor = true;
+            this.botonEste.Click += new System.EventHandler(this.botonEste_Click);
+            // 
+            // botonSur
+            // 
+            this.botonSur.Location = new System.Drawing.Point(629, 471);
+            this.botonSur.Name = "botonSur";
+            this.botonSur.Size = new System.Drawing.Size(75, 23);
+            this.botonSur.TabIndex = 4;
+            this.botonSur.Text = "Sur";
+            this.botonSur.UseVisualStyleBackColor = true;
+            this.botonSur.Click += new System.EventHandler(this.botonSur_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1410, 604);
+            this.Controls.Add(this.botonSur);
+            this.Controls.Add(this.botonEste);
+            this.Controls.Add(this.botonOeste);
+            this.Controls.Add(this.botonNorte);
             this.Controls.Add(this.panelCentral);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
@@ -52,6 +101,10 @@
         #endregion
 
         public System.Windows.Forms.RichTextBox panelCentral;
+        private System.Windows.Forms.Button botonNorte;
+        private System.Windows.Forms.Button botonOeste;
+        private System.Windows.Forms.Button botonEste;
+        private System.Windows.Forms.Button botonSur;
     }
 }
 

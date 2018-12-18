@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace TheLastWizard {
-    public class Zona {
-        public String descripcion;
+    public class Personaje {
+        public int filaActual;
+        public int columnaActual;
 
-        public Zona(String descripcion) {
-            this.descripcion = descripcion;
+        public Personaje() {
+
         }
     }
 }

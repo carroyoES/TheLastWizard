@@ -6,19 +6,27 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TheLastWizard {
-    class Juego {       
+    public class Juego {       
         public RichTextBox panelCentral;
         public Mapa mapa;
+        public Personaje personaje;
 
         public Juego(Form1 pantalla) {
             panelCentral = pantalla.panelCentral;
             this.mapa = new Mapa();
+            this.personaje = new Personaje();
+            establecerPosicionInicial();
             buclePrincipal();
         }
 
-        private void buclePrincipal() {
+        private void establecerPosicionInicial() {
+            personaje.filaActual = 0;
+            personaje.columnaActual = 0;
+        }
+
+        public void buclePrincipal() {
             // Se muestra la descripción de la zona actual :
-            panelCentral.Text = mapa.matrizMapa[0, 0].descripcion;
+            panelCentral.Text = mapa.matrizMapa[personaje.filaActual, personaje.columnaActual].descripcion;
         }
     }
 }

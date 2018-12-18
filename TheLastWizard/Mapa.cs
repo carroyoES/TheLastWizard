@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace TheLastWizard {
-    class Mapa {
+    public class Mapa {
         public Zona[,] matrizMapa;
 
         public Mapa() {
