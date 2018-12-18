@@ -17,7 +17,7 @@ namespace TheLastWizard {
         }
 
         private void buclePrincipal() {
-            // Se muestra la descripción de la zona actual
+            // Se muestra la descripción de la zona actual :
             panelCentral.Text = mapa.matrizMapa[0, 0].descripcion;
         }
     }
