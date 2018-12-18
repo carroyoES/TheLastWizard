@@ -10,7 +10,7 @@ namespace TheLastWizard {
 
         public Mapa() {
             matrizMapa = new Zona[,] {
-                { new Zona("Estás en la entrada"), new Zona("Estás en un pasillo") },
+                { new Zona("Estás en la entrada"), new Zona("Estás en un pasillo. Un goblin te sale al encuentro.") },
                 { new Zona("Estás en un viejo dormitorio"), new Zona("Estás en lo que parece ser la cocina")},
             };
         }

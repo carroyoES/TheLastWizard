@@ -14,7 +14,7 @@ namespace TheLastWizard {
         public Juego(Form1 pantalla) {
             panelCentral = pantalla.panelCentral;
             this.mapa = new Mapa();
-            this.personaje = new Personaje();
+            this.personaje = new Personaje(pantalla);
             establecerPosicionInicial();
             buclePrincipal();
         }

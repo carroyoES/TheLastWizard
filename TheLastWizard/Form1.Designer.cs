@@ -28,6 +28,8 @@
             this.botonOeste = new System.Windows.Forms.Button();
             this.botonEste = new System.Windows.Forms.Button();
             this.botonSur = new System.Windows.Forms.Button();
+            this.botonLanzarHechizo = new System.Windows.Forms.Button();
+            this.textBoxHechizo = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // panelCentral
@@ -42,7 +44,7 @@
             // 
             // botonNorte
             // 
-            this.botonNorte.Location = new System.Drawing.Point(629, 413);
+            this.botonNorte.Location = new System.Drawing.Point(357, 400);
             this.botonNorte.Name = "botonNorte";
             this.botonNorte.Size = new System.Drawing.Size(75, 23);
             this.botonNorte.TabIndex = 1;
@@ -52,7 +54,7 @@
             // 
             // botonOeste
             // 
-            this.botonOeste.Location = new System.Drawing.Point(554, 442);
+            this.botonOeste.Location = new System.Drawing.Point(282, 429);
             this.botonOeste.Name = "botonOeste";
             this.botonOeste.Size = new System.Drawing.Size(75, 23);
             this.botonOeste.TabIndex = 2;
@@ -62,7 +64,7 @@
             // 
             // botonEste
             // 
-            this.botonEste.Location = new System.Drawing.Point(703, 442);
+            this.botonEste.Location = new System.Drawing.Point(431, 429);
             this.botonEste.Name = "botonEste";
             this.botonEste.Size = new System.Drawing.Size(75, 23);
             this.botonEste.TabIndex = 3;
@@ -72,7 +74,7 @@
             // 
             // botonSur
             // 
-            this.botonSur.Location = new System.Drawing.Point(629, 471);
+            this.botonSur.Location = new System.Drawing.Point(357, 458);
             this.botonSur.Name = "botonSur";
             this.botonSur.Size = new System.Drawing.Size(75, 23);
             this.botonSur.TabIndex = 4;
@@ -80,12 +82,31 @@
             this.botonSur.UseVisualStyleBackColor = true;
             this.botonSur.Click += new System.EventHandler(this.botonSur_Click);
             // 
+            // botonLanzarHechizo
+            // 
+            this.botonLanzarHechizo.Location = new System.Drawing.Point(960, 429);
+            this.botonLanzarHechizo.Name = "botonLanzarHechizo";
+            this.botonLanzarHechizo.Size = new System.Drawing.Size(126, 33);
+            this.botonLanzarHechizo.TabIndex = 5;
+            this.botonLanzarHechizo.Text = "Lanzar Hechizo";
+            this.botonLanzarHechizo.UseVisualStyleBackColor = true;
+            this.botonLanzarHechizo.Click += new System.EventHandler(this.botonLanzarHechizo_Click);
+            // 
+            // textBoxHechizo
+            // 
+            this.textBoxHechizo.Location = new System.Drawing.Point(725, 442);
+            this.textBoxHechizo.Name = "textBoxHechizo";
+            this.textBoxHechizo.Size = new System.Drawing.Size(229, 20);
+            this.textBoxHechizo.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1410, 604);
+            this.Controls.Add(this.textBoxHechizo);
+            this.Controls.Add(this.botonLanzarHechizo);
             this.Controls.Add(this.botonSur);
             this.Controls.Add(this.botonEste);
             this.Controls.Add(this.botonOeste);
@@ -95,6 +116,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -105,6 +127,8 @@
         private System.Windows.Forms.Button botonOeste;
         private System.Windows.Forms.Button botonEste;
         private System.Windows.Forms.Button botonSur;
+        private System.Windows.Forms.Button botonLanzarHechizo;
+        public System.Windows.Forms.TextBox textBoxHechizo;
     }
 }
 

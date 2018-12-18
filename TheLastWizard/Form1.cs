@@ -29,7 +29,8 @@ namespace TheLastWizard {
         }
 
         private void botonEste_Click(object sender, EventArgs e) {
-
+            this.personaje.columnaActual += 1;
+            juego.buclePrincipal();
         }
 
         private void botonSur_Click(object sender, EventArgs e) {
@@ -38,7 +39,12 @@ namespace TheLastWizard {
         }
 
         private void botonOeste_Click(object sender, EventArgs e) {
+            this.personaje.columnaActual -= 1;
+            juego.buclePrincipal();
+        }
 
+        private void botonLanzarHechizo_Click(object sender, EventArgs e) {
+            this.personaje.lanzarHechizo();
         }
     }
 }
