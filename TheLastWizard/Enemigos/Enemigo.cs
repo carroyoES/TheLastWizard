@@ -36,6 +36,7 @@ namespace TheLastWizard.Enemigos {
         public void procesarDerrota() {
             vivo = false;
             boton.Text = "Cadáver de " + nombre;
+            nombre = "Cadáver de " + nombre;
         }
     }
 }

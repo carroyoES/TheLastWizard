@@ -22,6 +22,7 @@ namespace TheLastWizard.Enemigos {
             boton.BackColor = Color.Green;
             boton.Text = nombre;
             boton.ForeColor = Color.White;
+            boton.AutoSize = true;
             boton.Click += (s, e) => {
                 if (Personaje.hechizoCargado.necesitaObjetivo) {
                     Personaje.hechizoCargado.lanzar(this);
