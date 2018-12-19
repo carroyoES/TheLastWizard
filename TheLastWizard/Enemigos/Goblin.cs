@@ -11,6 +11,9 @@ namespace TheLastWizard.Enemigos {
         public Goblin() {
             nombre = "Goblin";
             reflejos = 3;
+            puntosVida = 6;
+            puntosArmadura = 2;
+            vivo = true;
             inicializarBoton();           
         }
 

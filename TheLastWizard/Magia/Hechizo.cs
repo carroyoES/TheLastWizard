@@ -9,6 +9,7 @@ namespace TheLastWizard.Magia {
         public String descripcion;
         public bool necesitaObjetivo;
         public int dificultadEsquivar;
+        public int dagno;
 
         public virtual void lanzar(ElementoEntorno elementoEntorno) { }
     }   

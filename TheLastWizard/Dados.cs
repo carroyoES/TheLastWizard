@@ -5,10 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace TheLastWizard {
-    class Dados {
-        public static int dosDeSeis(int extra){
+    public class Dados {
+        public static int dosDeSeis() {
             Random random = new Random();
-            return random.Next(0, 7) + random.Next(0, 7) + extra;
+            return random.Next(0, 7) + random.Next(0, 7);
+        }
+
+        public static int unoDeSeis() {
+            Random random = new Random();
+            return random.Next(0, 7);
         }
     }
 }
