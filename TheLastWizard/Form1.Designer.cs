@@ -30,6 +30,7 @@
             this.botonSur = new System.Windows.Forms.Button();
             this.botonLanzarHechizo = new System.Windows.Forms.Button();
             this.textBoxHechizo = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanelElementosEntorno = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // panelCentral
@@ -99,12 +100,22 @@
             this.textBoxHechizo.Size = new System.Drawing.Size(229, 20);
             this.textBoxHechizo.TabIndex = 6;
             // 
+            // flowLayoutPanelElementosEntorno
+            // 
+            this.flowLayoutPanelElementosEntorno.AutoScroll = true;
+            this.flowLayoutPanelElementosEntorno.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.flowLayoutPanelElementosEntorno.Location = new System.Drawing.Point(1124, 12);
+            this.flowLayoutPanelElementosEntorno.Name = "flowLayoutPanelElementosEntorno";
+            this.flowLayoutPanelElementosEntorno.Size = new System.Drawing.Size(274, 373);
+            this.flowLayoutPanelElementosEntorno.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1410, 604);
+            this.Controls.Add(this.flowLayoutPanelElementosEntorno);
             this.Controls.Add(this.textBoxHechizo);
             this.Controls.Add(this.botonLanzarHechizo);
             this.Controls.Add(this.botonSur);
@@ -129,6 +140,7 @@
         private System.Windows.Forms.Button botonSur;
         private System.Windows.Forms.Button botonLanzarHechizo;
         public System.Windows.Forms.TextBox textBoxHechizo;
+        public System.Windows.Forms.FlowLayoutPanel flowLayoutPanelElementosEntorno;
     }
 }
 

@@ -1,0 +1,41 @@
+- En el libro de hechizos que encuentras al principio, se especifican los que se pueden
+lanzar por nivel del mago.
+
+- Posibilidades muy variadas de combinación de hechizos --> La gracia del juego. 
+Y que el libro es como si fuera un tratado de magia de verdad, y explique lo de las clases, los niveles...
+(Por ejemplo fuego + agua + area = nube de vapor)
+
+- Resultados descriptivos para cada hechizo
+
+- Un botón con forma de dados para hacer las tiradas
+
+- Empezar sólo con un array de 3x3
+
+- Encuentros descriptivos, en los que también se puede hablar de distancias
+
+- Empezar con encuentros simples 1v1
+
+- Distintas clases elegibles: nigromante, mago arcano, elementalista, ilusionista, conjurador
+
+- Fondo tipo pergamino viejo
+
+- Podría llegar a ser roguelike?
+
+- No importa que sean zonas "iguales" en la matriz y que luego sean de distinto tamaño en la descripción (tipo Zork)
+
+- Cursor guay
+
+- Sonidos
+
+- Habilidades enemigos tipo d&d
+
+- Sacar las palabras básicas de la magia desde los hechizos que serán fruto de combinaciones,
+basánose en los del libro de d&d
+
+******** IMPORTANTE *********
+- Botones en plan usar, abrir... Y en un panel una lista de todos los objetos interactuables en la zona. También valdrá para
+los hechizos (x ej traspasar puerta)
+*******************************
+
+- Perks tipo obsidian, bethesda
+

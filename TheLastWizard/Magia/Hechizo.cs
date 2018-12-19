@@ -7,5 +7,7 @@ using System.Threading.Tasks;
 namespace TheLastWizard.Magia {
     public class Hechizo {
         public String descripcion;
-    }
+        public bool necesitaObjetivo;
+        public virtual void lanzar(ElementoEntorno elementoEntorno) { }
+    }   
 }

@@ -44,6 +44,7 @@ namespace TheLastWizard {
         }
 
         private void botonLanzarHechizo_Click(object sender, EventArgs e) {
+            this.personaje.ultimoBotonAccionPulsado = botonLanzarHechizo;
             this.personaje.lanzarHechizo();
         }
     }
