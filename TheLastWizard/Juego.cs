@@ -18,6 +18,7 @@ namespace TheLastWizard {
             panelElementosEntorno = pantalla.flowLayoutPanelElementosEntorno;
             this.mapa = new Mapa();
             this.personaje = new Personaje(pantalla);
+            this.mapa.zonaActual = mapa.matrizMapa[personaje.filaActual, personaje.columnaActual];
             establecerPosicionInicial();
             buclePrincipal();
         }
@@ -28,11 +29,10 @@ namespace TheLastWizard {
         }
 
         public void buclePrincipal() {
-            Zona zonaActual = mapa.matrizMapa[personaje.filaActual, personaje.columnaActual];
             // Se muestra la descripción de la zona actual :
-            panelCentral.Text = zonaActual.descripcion;
+            panelCentral.Text = mapa.zonaActual.descripcion;
             // Se muestran los botones de elementos interactuables de la zona actual:
-            foreach(ElementoEntorno elementoEntorno in zonaActual.listaElementosEntorno) {            
+            foreach(ElementoEntorno elementoEntorno in mapa.zonaActual.listaElementosEntorno) {            
                 panelElementosEntorno.Controls.Add(elementoEntorno.boton);
             }
         }

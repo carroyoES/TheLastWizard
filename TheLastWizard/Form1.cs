@@ -23,24 +23,49 @@ namespace TheLastWizard {
 
         }
 
+        // TODO : Hacer los movimientos con un método dentro de la clase Personaje
         private void botonNorte_Click(object sender, EventArgs e) {
-            this.personaje.filaActual -= 1;
-            juego.buclePrincipal();
+            if (juego.mapa.zonaActual.caminableNorte) {
+                this.personaje.filaActual -= 1;
+                juego.mapa.actualizarZonaActual(juego.mapa.matrizMapa[personaje.filaActual, personaje.columnaActual]);
+                juego.buclePrincipal();
+            }
+            else {
+                Juego.agnadirTextoPanelCentral("No se puede continuar en esa dirección.\n");
+            }
         }
 
         private void botonEste_Click(object sender, EventArgs e) {
-            this.personaje.columnaActual += 1;
-            juego.buclePrincipal();
+            if (juego.mapa.zonaActual.caminableEste) {
+                this.personaje.columnaActual += 1;
+                juego.mapa.actualizarZonaActual(juego.mapa.matrizMapa[personaje.filaActual, personaje.columnaActual]);
+                juego.buclePrincipal();
+            }
+            else {
+                Juego.agnadirTextoPanelCentral("No se puede continuar en esa dirección.\n");
+            }
         }
 
         private void botonSur_Click(object sender, EventArgs e) {
-            this.personaje.filaActual += 1;
-            juego.buclePrincipal();
+            if (juego.mapa.zonaActual.caminableSur) {
+                this.personaje.filaActual += 1;
+                juego.mapa.actualizarZonaActual(juego.mapa.matrizMapa[personaje.filaActual, personaje.columnaActual]);
+                juego.buclePrincipal();
+            }
+            else {
+                Juego.agnadirTextoPanelCentral("No se puede continuar en esa dirección.\n");
+            }
         }
 
         private void botonOeste_Click(object sender, EventArgs e) {
-            this.personaje.columnaActual -= 1;
-            juego.buclePrincipal();
+            if (juego.mapa.zonaActual.caminableOeste) {
+                this.personaje.columnaActual -= 1;
+                juego.mapa.actualizarZonaActual(juego.mapa.matrizMapa[personaje.filaActual, personaje.columnaActual]);
+                juego.buclePrincipal();
+            }
+            else {
+                Juego.agnadirTextoPanelCentral("No se puede continuar en esa dirección.\n");
+            }
         }
 
         private void botonLanzarHechizo_Click(object sender, EventArgs e) {

@@ -25,7 +25,7 @@ namespace TheLastWizard {
                 hechizoCargado = new BolaDeFuego();            
             }
             else {
-                Juego.agnadirTextoPanelCentral("Hechizo desconocido");
+                Juego.agnadirTextoPanelCentral("Hechizo desconocido\n");
             }
         }
     }

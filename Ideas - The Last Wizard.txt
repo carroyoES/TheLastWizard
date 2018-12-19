@@ -45,3 +45,4 @@ los hechizos (x ej traspasar puerta). Así también se aportan formas de interactu
 
 - Que cada elemento tenga su color para el texto de su nombre
 
+- Dibujar el plano de las zonas aparte (sólo para mí, para el diseño) y nombrarlas con códigos para que sea todo más fácil.
