@@ -1,5 +1,7 @@
 - En el libro de hechizos que encuentras al principio, se especifican los que se pueden
-lanzar por nivel del mago.
+lanzar por nivel del mago. Además tiene la gracia de irte aprendiendo las palabras a pronunciar
+(CADA VEZ MÁS COMPLEJAS), y da sensación de ir aprendiendo de verdad, al principio se consultará
+mucho el libro y luego cada vez menos.
 
 - Posibilidades muy variadas de combinación de hechizos --> La gracia del juego. 
 Y que el libro es como si fuera un tratado de magia de verdad, y explique lo de las clases, los niveles...
@@ -34,8 +36,12 @@ basánose en los del libro de d&d
 
 ******** IMPORTANTE *********
 - Botones en plan usar, abrir... Y en un panel una lista de todos los objetos interactuables en la zona. También valdrá para
-los hechizos (x ej traspasar puerta)
+los hechizos (x ej traspasar puerta). Así también se aportan formas de interactuar con el entorno durante el combate.
 *******************************
 
 - Perks tipo obsidian, bethesda
+
+- Que también tengan puntos de vida los muebles, etc
+
+- Que cada elemento tenga su color para el texto de su nombre
 

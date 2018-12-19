@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dados.cs" />
     <Compile Include="ElementoEntorno.cs" />
     <Compile Include="Enemigos\Enemigo.cs" />
     <Compile Include="Enemigos\Goblin.cs" />

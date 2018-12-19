@@ -10,6 +10,7 @@ namespace TheLastWizard.Enemigos {
     public class Goblin : Enemigo {
         public Goblin() {
             nombre = "Goblin";
+            reflejos = 3;
             inicializarBoton();           
         }
 
