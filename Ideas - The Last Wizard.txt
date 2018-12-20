@@ -1,6 +1,8 @@
 ******** IMPORTANTE *********
 - Botones en plan usar, abrir... Y en un panel una lista de todos los objetos interactuables en la zona. También valdrá para
 los hechizos (x ej traspasar puerta). Así también se aportan formas de interactuar con el entorno durante el combate.
+
+- Palabras especiales que se podrán ir encontrando, por eso es importante que no estén predefinidas
 *******************************
 
 

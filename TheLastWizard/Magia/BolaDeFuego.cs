@@ -19,7 +19,7 @@ namespace TheLastWizard.Magia {
         }
 
         public override void lanzar(ElementoEntorno elementoEntorno) {
-            Juego.agnadirTextoPanelCentral("Lanzas una bola de fuego sobre " + elementoEntorno.nombre + "\n");
+            Juego.agnadirTextoPanelCentral("- Tú: ¡FLAMA AEON! \nLanzas una bola de fuego sobre " + elementoEntorno.nombre + "\n");
             // Se comprueba si se ha lanzado contra un enemigo, y si este está vivo:
             if (elementoEntorno is Enemigo && (elementoEntorno as Enemigo).vivo) {
                 Enemigo enemigo = elementoEntorno as Enemigo;

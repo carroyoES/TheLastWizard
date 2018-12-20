@@ -51,5 +51,12 @@ namespace TheLastWizard {
         public static void agnadirTextoPanelCentral(String texto) {
             panelCentral.AppendText(texto);
         }
+
+        public void comprobarTurnoEnemigo() {
+            // Se comprueba si está en un encuentro para que el enemigo realice su turno:
+            if (personaje.enemigoActual != null) {
+                personaje.enemigoActual.realizarTurno();
+            }
+        }
     }
 }

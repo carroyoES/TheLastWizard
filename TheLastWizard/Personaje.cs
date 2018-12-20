@@ -36,7 +36,8 @@ namespace TheLastWizard {
                 hechizoCargado = new BolaDeFuego(juego);            
             }
             else {
-                Juego.agnadirTextoPanelCentral("Hechizo desconocido\n");
+                Juego.agnadirTextoPanelCentral("Tú: ¡" + textoHechizo.ToUpper() + "!\n" + "Tus palabras no parecen surtir ningún efecto mágico\n");
+                juego.comprobarTurnoEnemigo();
             }
         }
 
