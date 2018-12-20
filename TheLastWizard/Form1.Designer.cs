@@ -31,6 +31,10 @@
             this.botonLanzarHechizo = new System.Windows.Forms.Button();
             this.textBoxHechizo = new System.Windows.Forms.TextBox();
             this.flowLayoutPanelElementosEntorno = new System.Windows.Forms.FlowLayoutPanel();
+            this.botonAbrir = new System.Windows.Forms.Button();
+            this.botonCoger = new System.Windows.Forms.Button();
+            this.botonUsar = new System.Windows.Forms.Button();
+            this.botonHablar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panelCentral
@@ -109,12 +113,53 @@
             this.flowLayoutPanelElementosEntorno.Size = new System.Drawing.Size(274, 373);
             this.flowLayoutPanelElementosEntorno.TabIndex = 7;
             // 
+            // botonAbrir
+            // 
+            this.botonAbrir.Location = new System.Drawing.Point(560, 533);
+            this.botonAbrir.Name = "botonAbrir";
+            this.botonAbrir.Size = new System.Drawing.Size(75, 23);
+            this.botonAbrir.TabIndex = 8;
+            this.botonAbrir.Text = "Abrir";
+            this.botonAbrir.UseVisualStyleBackColor = true;
+            this.botonAbrir.Click += new System.EventHandler(this.botonAbrir_Click);
+            // 
+            // botonCoger
+            // 
+            this.botonCoger.Location = new System.Drawing.Point(641, 533);
+            this.botonCoger.Name = "botonCoger";
+            this.botonCoger.Size = new System.Drawing.Size(75, 23);
+            this.botonCoger.TabIndex = 9;
+            this.botonCoger.Text = "Coger";
+            this.botonCoger.UseVisualStyleBackColor = true;
+            // 
+            // botonUsar
+            // 
+            this.botonUsar.Location = new System.Drawing.Point(723, 533);
+            this.botonUsar.Name = "botonUsar";
+            this.botonUsar.Size = new System.Drawing.Size(75, 23);
+            this.botonUsar.TabIndex = 10;
+            this.botonUsar.Text = "Usar";
+            this.botonUsar.UseVisualStyleBackColor = true;
+            // 
+            // botonHablar
+            // 
+            this.botonHablar.Location = new System.Drawing.Point(805, 533);
+            this.botonHablar.Name = "botonHablar";
+            this.botonHablar.Size = new System.Drawing.Size(75, 23);
+            this.botonHablar.TabIndex = 11;
+            this.botonHablar.Text = "Hablar";
+            this.botonHablar.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1410, 604);
+            this.Controls.Add(this.botonHablar);
+            this.Controls.Add(this.botonUsar);
+            this.Controls.Add(this.botonCoger);
+            this.Controls.Add(this.botonAbrir);
             this.Controls.Add(this.flowLayoutPanelElementosEntorno);
             this.Controls.Add(this.textBoxHechizo);
             this.Controls.Add(this.botonLanzarHechizo);
@@ -141,6 +186,10 @@
         public System.Windows.Forms.Button botonLanzarHechizo;
         public System.Windows.Forms.TextBox textBoxHechizo;
         public System.Windows.Forms.FlowLayoutPanel flowLayoutPanelElementosEntorno;
+        public System.Windows.Forms.Button botonAbrir;
+        public System.Windows.Forms.Button botonCoger;
+        public System.Windows.Forms.Button botonUsar;
+        public System.Windows.Forms.Button botonHablar;
     }
 }
 

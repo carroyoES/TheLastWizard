@@ -29,7 +29,7 @@ namespace TheLastWizard {
         public void lanzarHechizo() {
             String textoHechizo = pantalla.textBoxHechizo.Text;
             // TODO : determinar el hechizo con un método static de Hechizo que recorra un array con todos los hechizos
-            if (textoHechizo.Equals("Flama Aeon")) {
+            if (textoHechizo.Equals("f")) { // Flama Aeon
                 hechizoCargado = new BolaDeFuego(juego);            
             }
             else {

@@ -72,5 +72,10 @@ namespace TheLastWizard {
             this.personaje.ultimoBotonAccionPulsado = botonLanzarHechizo;
             this.personaje.lanzarHechizo();
         }
+
+        private void botonAbrir_Click(object sender, EventArgs e) {
+            this.personaje.ultimoBotonAccionPulsado = botonAbrir;
+            Juego.agnadirTextoPanelCentral("Selecciona lo que deseas abrir\n");
+        }
     }
 }

@@ -9,8 +9,7 @@ using System.Windows.Forms;
 namespace TheLastWizard.Enemigos {
     public class Goblin : Enemigo {
 
-        public Goblin(Juego juego) {
-            this.juego = juego;
+        public Goblin(Juego juego) : base(juego) {
             nombre = "Goblin";
             reflejos = 3;
             puntosVida = 6;
@@ -54,7 +53,7 @@ namespace TheLastWizard.Enemigos {
             Personaje personaje = juego.personaje;
             int dagno = Dados.unoDeSeis();
             if (personaje.puntosArmadura < dagno) {
-                puntosVida -= (dagno - personaje.puntosArmadura);
+                personaje.puntosVida -= (dagno - personaje.puntosArmadura);
                 Juego.agnadirTextoPanelCentral("Recibes " + (dagno - personaje.puntosArmadura) + " puntos de daño!\n");
                 // Se comprueba si muere el personaje
                 if (personaje.puntosVida <= 0) {

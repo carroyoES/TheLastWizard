@@ -9,5 +9,10 @@ namespace TheLastWizard {
     public class ElementoEntorno {
         public String nombre;
         public Button boton;
+        public Juego juego;
+
+        public ElementoEntorno(Juego juego) {
+            this.juego = juego;
+        }
     }
 }

@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace TheLastWizard.Enemigos {
     public class Enemigo : ElementoEntorno {
-        public Juego juego;
         public int reflejos;
         public int puntosVida;
         public int puntosArmadura;
         public int fuerza;
         public bool vivo;
+
+        public Enemigo(Juego juego) : base(juego) {
+        }
 
         public bool esquivar(int dificultad) {
             if (Dados.dosDeSeis() + this.reflejos >= dificultad) {
