@@ -33,7 +33,7 @@ namespace TheLastWizard.Enemigos {
                     if (juego.personaje.hechizoCargado.necesitaObjetivo) {
                         juego.personaje.hechizoCargado.lanzar(this);
                     }
-                }              
+                }
             };
         }
 

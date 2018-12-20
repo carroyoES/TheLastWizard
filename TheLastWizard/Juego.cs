@@ -38,6 +38,10 @@ namespace TheLastWizard {
             if (mapa.zonaActual.descripcionEncuentroActivada) {
                 panelCentral.AppendText(mapa.zonaActual.descripcionEncuentro);
             }
+            // Se comprueba si hay enemigo vivo en la zona para asignarlo como enemigo actual:
+            if (mapa.zonaActual.tieneEnemigo()) {
+                personaje.enemigoActual = mapa.zonaActual.obtenerEnemigo();
+            }
             // Se muestran los botones de elementos interactuables de la zona actual:
             foreach(ElementoEntorno elementoEntorno in mapa.zonaActual.listaElementosEntorno) {            
                 panelElementosEntorno.Controls.Add(elementoEntorno.boton);

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TheLastWizard.Enemigos;
 
 namespace TheLastWizard {
     public class Zona {
@@ -35,6 +36,24 @@ namespace TheLastWizard {
                 }
             }
             catch (Exception e) { };
+        }
+
+        public bool tieneEnemigo() {
+            foreach(ElementoEntorno elementoEntorno in listaElementosEntorno) {
+                if(elementoEntorno is Enemigo) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public Enemigo obtenerEnemigo() {
+            foreach (ElementoEntorno elementoEntorno in listaElementosEntorno) {
+                if (elementoEntorno is Enemigo) {
+                    return elementoEntorno as Enemigo;
+                }
+            }
+            return null;
         }
     }
 }

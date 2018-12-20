@@ -48,6 +48,10 @@ namespace TheLastWizard.Objetos.Muebles {
                         break;
                 }
             }
+            // Se comprueba si está en un encuentro para que el enemigo realice su turno:
+            if (juego.personaje.enemigoActual != null) {
+                juego.personaje.enemigoActual.realizarTurno();
+            }
         }
     }
 }

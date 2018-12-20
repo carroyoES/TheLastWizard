@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TheLastWizard.Enemigos;
 using TheLastWizard.Magia;
 
 namespace TheLastWizard {
@@ -17,6 +18,7 @@ namespace TheLastWizard {
         private Form1 pantalla;
         public Hechizo hechizoCargado;
         public Juego juego;
+        public Enemigo enemigoActual; // TODO : List de enemigos
 
         public Personaje(Juego juego, Form1 pantalla) {
             this.juego = juego;
@@ -24,6 +26,7 @@ namespace TheLastWizard {
             this.puntosVida = 10;
             this.reflejos = 5;
             this.puntosArmadura = 2;
+            this.enemigoActual = null;
         }
 
         public void lanzarHechizo() {
