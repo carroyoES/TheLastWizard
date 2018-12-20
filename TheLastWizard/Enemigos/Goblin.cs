@@ -5,17 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TheLastWizard.Objetos;
 
 namespace TheLastWizard.Enemigos {
     public class Goblin : Enemigo {
 
-        public Goblin(Juego juego) : base(juego) {
+        public Goblin(Juego juego, Item[] itemsExtra) : base(juego, itemsExtra) {
             nombre = "Goblin";
             reflejos = 3;
             puntosVida = 6;
             puntosArmadura = 2;
             fuerza = 2;
             vivo = true;
+            //inventario.itemsEnPosesion.Add(new Cimitarra()); // TODO : aquí se añadirá el equipo por defecto
             inicializarBoton();           
         }
 

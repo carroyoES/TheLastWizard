@@ -84,3 +84,5 @@ O que te siga si quieres, porque sí.
 - Es en el momento de atacar o lanzar hechizo etc, cuando se hace una tirada de dificultad contra los reflejos o lo q sea del enemigo
 
 - Los botones (este, sur...) con flechas
+
+- Tirada de percepción (automática) para comprobar si ve la llave que cuelga del cinto del goblin.

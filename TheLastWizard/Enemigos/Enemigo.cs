@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TheLastWizard.Objetos;
 
 namespace TheLastWizard.Enemigos {
     public class Enemigo : ElementoEntorno {
@@ -11,8 +12,14 @@ namespace TheLastWizard.Enemigos {
         public int puntosArmadura;
         public int fuerza;
         public bool vivo;
+        public Inventario inventario;
 
-        public Enemigo(Juego juego) : base(juego) {
+        // Los items extra son para añadirlos al inventario base de cada enemigo
+        public Enemigo(Juego juego, Item[] itemsExtra) : base(juego) {
+            inventario = new Inventario(new List<Item>());
+            foreach (Item item in itemsExtra) {
+                inventario.itemsEnPosesion.Add(item);
+            }
         }
 
         public bool esquivar(int dificultad) {

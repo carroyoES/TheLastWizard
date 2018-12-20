@@ -30,6 +30,9 @@ namespace TheLastWizard.Objetos.Muebles {
                     if (this.sePuedeAbrir) {
                         abrir();
                     }
+                    else {
+                        Juego.agnadirTextoPanelCentral("Este mueble no se puede abrir");
+                    }
                 }
             };
         }

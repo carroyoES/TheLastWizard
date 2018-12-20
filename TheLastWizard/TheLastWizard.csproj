@@ -59,8 +59,11 @@
     <Compile Include="Magia\BolaDeFuego.cs" />
     <Compile Include="Magia\Hechizo.cs" />
     <Compile Include="Mapa.cs" />
+    <Compile Include="Objetos\Inventario.cs" />
+    <Compile Include="Objetos\Item.cs" />
     <Compile Include="Objetos\Muebles\Mueble.cs" />
     <Compile Include="Objetos\Muebles\Puerta.cs" />
+    <Compile Include="Objetos\Varios\Llave.cs" />
     <Compile Include="Personaje.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
