@@ -12,9 +12,11 @@ namespace TheLastWizard {
         public int columnaActual;
         public Button ultimoBotonAccionPulsado;
         private Form1 pantalla;
-        public static Hechizo hechizoCargado;
+        public Hechizo hechizoCargado;
+        public Juego juego;
 
-        public Personaje(Form1 pantalla) {
+        public Personaje(Juego juego, Form1 pantalla) {
+            this.juego = juego;
             this.pantalla = pantalla;
         }
 
@@ -22,7 +24,7 @@ namespace TheLastWizard {
             String textoHechizo = pantalla.textBoxHechizo.Text;
             // TODO : determinar el hechizo con un método static de Hechizo que recorra un array con todos los hechizos
             if (textoHechizo.Equals("Flama Aeon")) {
-                hechizoCargado = new BolaDeFuego();            
+                hechizoCargado = new BolaDeFuego(juego);            
             }
             else {
                 Juego.agnadirTextoPanelCentral("Hechizo desconocido\n");

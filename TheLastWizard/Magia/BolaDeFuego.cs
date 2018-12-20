@@ -8,12 +8,14 @@ using TheLastWizard.Enemigos;
 namespace TheLastWizard.Magia {
     public class BolaDeFuego : Hechizo {
 
-        public BolaDeFuego() {
+        public BolaDeFuego(Juego juego) {
+            this.juego = juego;
             this.descripcion = "Lanzas una bola de fuego que consume al Goblin\n";
             // TODO : Y si no hay enemigo se describe de forma distinta etc
             this.necesitaObjetivo = true;
             this.dificultadEsquivar = 8;
             this.dagno = Dados.unoDeSeis() + 2;
+            Juego.agnadirTextoPanelCentral("Selecciona un objetivo \n");
         }
 
         public override void lanzar(ElementoEntorno elementoEntorno) {
@@ -30,6 +32,8 @@ namespace TheLastWizard.Magia {
                     Juego.agnadirTextoPanelCentral(elementoEntorno.nombre + " ha esquivado la bola de fuego!\n");
                 }
             }
+            juego.personaje.hechizoCargado = null;
+            juego.personaje.ultimoBotonAccionPulsado = null;
         }
     }
 }

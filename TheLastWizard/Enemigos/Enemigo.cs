@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TheLastWizard.Enemigos {
     public class Enemigo : ElementoEntorno {
+        public Juego juego;
         public int reflejos;
         public int puntosVida;
         public int puntosArmadura;

@@ -8,7 +8,9 @@ using System.Windows.Forms;
 
 namespace TheLastWizard.Enemigos {
     public class Goblin : Enemigo {
-        public Goblin() {
+
+        public Goblin(Juego juego) {
+            this.juego = juego;
             nombre = "Goblin";
             reflejos = 3;
             puntosVida = 6;
@@ -24,9 +26,12 @@ namespace TheLastWizard.Enemigos {
             boton.ForeColor = Color.White;
             boton.AutoSize = true;
             boton.Click += (s, e) => {
-                if (Personaje.hechizoCargado.necesitaObjetivo) {
-                    Personaje.hechizoCargado.lanzar(this);
-                }
+                // Si lo último que ha hecho el jugador ha sido pulsar lanzar hechizo:
+                if (juego.personaje.ultimoBotonAccionPulsado == juego.pantalla.botonLanzarHechizo) {
+                    if (juego.personaje.hechizoCargado.necesitaObjetivo) {
+                        juego.personaje.hechizoCargado.lanzar(this);
+                    }
+                }              
             };
         }
 

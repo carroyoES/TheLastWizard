@@ -134,11 +134,11 @@
         #endregion
 
         public System.Windows.Forms.RichTextBox panelCentral;
-        private System.Windows.Forms.Button botonNorte;
-        private System.Windows.Forms.Button botonOeste;
-        private System.Windows.Forms.Button botonEste;
-        private System.Windows.Forms.Button botonSur;
-        private System.Windows.Forms.Button botonLanzarHechizo;
+        public System.Windows.Forms.Button botonNorte;
+        public System.Windows.Forms.Button botonOeste;
+        public System.Windows.Forms.Button botonEste;
+        public System.Windows.Forms.Button botonSur;
+        public System.Windows.Forms.Button botonLanzarHechizo;
         public System.Windows.Forms.TextBox textBoxHechizo;
         public System.Windows.Forms.FlowLayoutPanel flowLayoutPanelElementosEntorno;
     }

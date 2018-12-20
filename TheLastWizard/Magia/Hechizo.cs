@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TheLastWizard.Magia {
     public class Hechizo {
+        public Juego juego;
         public String descripcion;
         public bool necesitaObjetivo;
         public int dificultadEsquivar;

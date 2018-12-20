@@ -1,3 +1,31 @@
+******** IMPORTANTE *********
+- Botones en plan usar, abrir... Y en un panel una lista de todos los objetos interactuables en la zona. También valdrá para
+los hechizos (x ej traspasar puerta). Así también se aportan formas de interactuar con el entorno durante el combate.
+*******************************
+
+
+
+*******HECHIZOS***********
+- Animar objeto
+
+- Reanimar cadáver
+
+- Bola de fuego
+
+- Command animal
+
+- Portal arcano: accedes a una zona a X zonas de distancia, donde X depende de la magia del personaje
+
+- Armadura de Tal (o armadura etérea)
+
+- Curación
+
+- Invisibilidad
+
+- Transformar en X (depende del nivel del mago para ver hasta qué X puede hacer, y de la resistencia mental del objetivo, si la tiene)
+*************************
+
+
 - En el libro de hechizos que encuentras al principio, se especifican los que se pueden
 lanzar por nivel del mago. Además tiene la gracia de irte aprendiendo las palabras a pronunciar
 (CADA VEZ MÁS COMPLEJAS), y da sensación de ir aprendiendo de verdad, al principio se consultará
@@ -34,11 +62,6 @@ Y que el libro es como si fuera un tratado de magia de verdad, y explique lo de 
 - Sacar las palabras básicas de la magia desde los hechizos que serán fruto de combinaciones,
 basánose en los del libro de d&d
 
-******** IMPORTANTE *********
-- Botones en plan usar, abrir... Y en un panel una lista de todos los objetos interactuables en la zona. También valdrá para
-los hechizos (x ej traspasar puerta). Así también se aportan formas de interactuar con el entorno durante el combate.
-*******************************
-
 - Perks tipo obsidian, bethesda
 
 - Que también tengan puntos de vida los muebles, etc
@@ -48,3 +71,13 @@ los hechizos (x ej traspasar puerta). Así también se aportan formas de interactu
 - Dibujar el plano de las zonas aparte (sólo para mí, para el diseño) y nombrarlas con códigos para que sea todo más fácil.
 
 - Lootear cadáveres de enemigos
+
+- Distancia enemigos
+
+- Un ratoncillo en alguna sala al que se le pueda lanzar un hechizo de command animal para que traiga alguna llave o lo q sea.
+O que te siga si quieres, porque sí.
+
+- Una ciudad en la que pueda tener una casa, etc.
+
+- Lore que pueda leer en libros que encuentre, etc.
+

@@ -11,10 +11,10 @@ C:\Users\Carlos\source\repos\TheLastWizard\TheLastWizard\obj\Debug\TheLastWizard
 C:\Users\Carlos\Documents\GitHub\TheLastWizard\TheLastWizard\bin\Debug\TheLastWizard.exe.config
 C:\Users\Carlos\Documents\GitHub\TheLastWizard\TheLastWizard\bin\Debug\TheLastWizard.exe
 C:\Users\Carlos\Documents\GitHub\TheLastWizard\TheLastWizard\bin\Debug\TheLastWizard.pdb
-C:\Users\Carlos\Documents\GitHub\TheLastWizard\TheLastWizard\obj\Debug\TheLastWizard.csprojResolveAssemblyReference.cache
 C:\Users\Carlos\Documents\GitHub\TheLastWizard\TheLastWizard\obj\Debug\TheLastWizard.Form1.resources
 C:\Users\Carlos\Documents\GitHub\TheLastWizard\TheLastWizard\obj\Debug\TheLastWizard.Properties.Resources.resources
 C:\Users\Carlos\Documents\GitHub\TheLastWizard\TheLastWizard\obj\Debug\TheLastWizard.csproj.GenerateResource.Cache
 C:\Users\Carlos\Documents\GitHub\TheLastWizard\TheLastWizard\obj\Debug\TheLastWizard.csproj.CoreCompileInputs.cache
 C:\Users\Carlos\Documents\GitHub\TheLastWizard\TheLastWizard\obj\Debug\TheLastWizard.exe
 C:\Users\Carlos\Documents\GitHub\TheLastWizard\TheLastWizard\obj\Debug\TheLastWizard.pdb
+C:\Users\Carlos\Documents\GitHub\TheLastWizard\TheLastWizard\obj\Debug\TheLastWizard.csprojResolveAssemblyReference.cache
