@@ -35,6 +35,9 @@ namespace TheLastWizard {
             panelElementosEntorno.Controls.Clear();
             // Se muestra la descripción de la zona actual :
             panelCentral.Text = mapa.zonaActual.descripcion;
+            if (mapa.zonaActual.descripcionEncuentroActivada) {
+                panelCentral.AppendText(mapa.zonaActual.descripcionEncuentro);
+            }
             // Se muestran los botones de elementos interactuables de la zona actual:
             foreach(ElementoEntorno elementoEntorno in mapa.zonaActual.listaElementosEntorno) {            
                 panelElementosEntorno.Controls.Add(elementoEntorno.boton);

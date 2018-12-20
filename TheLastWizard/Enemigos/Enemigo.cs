@@ -38,6 +38,7 @@ namespace TheLastWizard.Enemigos {
             vivo = false;
             boton.Text = "Cadáver de " + nombre;
             nombre = "Cadáver de " + nombre;
+            juego.mapa.zonaActual.descripcionEncuentroActivada = false;
         }
     }
 }

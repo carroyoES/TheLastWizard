@@ -14,8 +14,8 @@ namespace TheLastWizard {
         public Mapa(Juego juego) {
             this.juego = juego;
             matrizMapa = new Zona[,] {
-                { new Zona("Estás en la entrada\n", null, false, true, false, false), new Zona("Estás en un pasillo. Un goblin te sale al encuentro.\n", new ElementoEntorno[]{new Goblin(juego) }, false, false, true, true) },
-                { new Zona("Estás en un viejo dormitorio\n", null, false, true, false, false), new Zona("Estás en lo que parece ser la cocina\n", null, true, false, false, true)},
+                { new Zona("Estás en la entrada\n", "", false, null, false, true, false, false), new Zona("Estás en un pasillo.\n", "Un goblin te sale al encuentro.\n", true, new ElementoEntorno[]{new Goblin(juego) }, false, false, true, true) },
+                { new Zona("Estás en un viejo dormitorio\n", "", false, null, false, true, false, false), new Zona("Estás en lo que parece ser la cocina\n", "", false, null, true, false, false, true)},
             };
         }
 
