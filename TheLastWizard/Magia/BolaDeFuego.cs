@@ -31,6 +31,10 @@ namespace TheLastWizard.Magia {
                 else {
                     Juego.agnadirTextoPanelCentral(elementoEntorno.nombre + " ha esquivado la bola de fuego!\n");
                 }
+                // Si el enemigo sigue vivo después del hechizo, que realice su turno
+                if (enemigo.vivo) {
+                    enemigo.realizarTurno();
+                }
             }
             juego.personaje.hechizoCargado = null;
             juego.personaje.ultimoBotonAccionPulsado = null;

@@ -10,6 +10,7 @@ namespace TheLastWizard.Enemigos {
         public int reflejos;
         public int puntosVida;
         public int puntosArmadura;
+        public int fuerza;
         public bool vivo;
 
         public bool esquivar(int dificultad) {
@@ -40,5 +41,7 @@ namespace TheLastWizard.Enemigos {
             nombre = "Cadáver de " + nombre;
             juego.mapa.zonaActual.descripcionEncuentroActivada = false;
         }
+
+        public virtual void realizarTurno() {}
     }
 }
