@@ -77,5 +77,10 @@ namespace TheLastWizard {
             this.personaje.ultimoBotonAccionPulsado = botonAbrir;
             Juego.agnadirTextoPanelCentral("Selecciona lo que deseas abrir\n");
         }
+
+        private void botonSaquear_Click(object sender, EventArgs e) {
+            this.personaje.ultimoBotonAccionPulsado = botonSaquear;
+            Juego.agnadirTextoPanelCentral("Selecciona lo que deseas saquear\n");
+        }
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TheLastWizard.Enemigos;
 using TheLastWizard.Magia;
+using TheLastWizard.Objetos;
 
 namespace TheLastWizard {
     public class Personaje {
@@ -43,6 +44,19 @@ namespace TheLastWizard {
 
         public void procesarDerrota() {
             Juego.agnadirTextoPanelCentral("Has sido derrotado!\n");
+        }
+
+        public void saquear(ElementoEntorno elementoEntorno) {
+            // Si está saqueando un enemigo:
+            if (elementoEntorno is Enemigo) {
+                if (!(elementoEntorno as Enemigo).vivo) {
+                    Juego.agnadirTextoPanelCentral(elementoEntorno.nombre + " tiene:\n");
+                    foreach (Item item in (elementoEntorno as Enemigo).inventario.itemsEnPosesion) {
+                        Juego.agnadirTextoPanelCentral(item.nombre + "\n");
+                    }
+                }
+                // TODO : si está vivo
+            }
         }
     }
 }

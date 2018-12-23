@@ -35,6 +35,7 @@
             this.botonCoger = new System.Windows.Forms.Button();
             this.botonUsar = new System.Windows.Forms.Button();
             this.botonHablar = new System.Windows.Forms.Button();
+            this.botonSaquear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panelCentral
@@ -150,12 +151,23 @@
             this.botonHablar.Text = "Hablar";
             this.botonHablar.UseVisualStyleBackColor = true;
             // 
+            // botonSaquear
+            // 
+            this.botonSaquear.Location = new System.Drawing.Point(887, 533);
+            this.botonSaquear.Name = "botonSaquear";
+            this.botonSaquear.Size = new System.Drawing.Size(75, 23);
+            this.botonSaquear.TabIndex = 12;
+            this.botonSaquear.Text = "Saquear";
+            this.botonSaquear.UseVisualStyleBackColor = true;
+            this.botonSaquear.Click += new System.EventHandler(this.botonSaquear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1410, 604);
+            this.Controls.Add(this.botonSaquear);
             this.Controls.Add(this.botonHablar);
             this.Controls.Add(this.botonUsar);
             this.Controls.Add(this.botonCoger);
@@ -190,6 +202,7 @@
         public System.Windows.Forms.Button botonCoger;
         public System.Windows.Forms.Button botonUsar;
         public System.Windows.Forms.Button botonHablar;
+        public System.Windows.Forms.Button botonSaquear;
     }
 }
 

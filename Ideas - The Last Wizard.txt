@@ -1,6 +1,5 @@
 ******** IMPORTANTE *********
-- Botones en plan usar, abrir... Y en un panel una lista de todos los objetos interactuables en la zona. También valdrá para
-los hechizos (x ej traspasar puerta). Así también se aportan formas de interactuar con el entorno durante el combate.
+- Al principio eres un mindungui, como en Elder Scrolls
 
 - Palabras especiales que se podrán ir encontrando, por eso es importante que no estén predefinidas
 *******************************
@@ -25,8 +24,15 @@ los hechizos (x ej traspasar puerta). Así también se aportan formas de interactu
 - Invisibilidad
 
 - Transformar en X (depende del nivel del mago para ver hasta qué X puede hacer, y de la resistencia mental del objetivo, si la tiene)
-*************************
 
+- Iluminar
+
+- Levitar
+
+- Convertirse en otra cosa
+
+- Ojo arcano: para ver lo que hay en otra zona
+*************************
 
 - En el libro de hechizos que encuentras al principio, se especifican los que se pueden
 lanzar por nivel del mago. Además tiene la gracia de irte aprendiendo las palabras a pronunciar
@@ -88,3 +94,9 @@ O que te siga si quieres, porque sí.
 - Los botones (este, sur...) con flechas
 
 - Tirada de percepción (automática) para comprobar si ve la llave que cuelga del cinto del goblin.
+
+- La iluminación afecta a la dificultad para impactar, etc
+
+- Puntos de mana u otro mecanismo para evitar hechizos ilimitados
+
+- Ir mejorando tipo Skyrim, a medida que vas utilizando hechizos/habilidades de un tipo mejoras ese tipo?

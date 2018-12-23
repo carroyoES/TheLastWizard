@@ -18,23 +18,9 @@ namespace TheLastWizard.Enemigos {
             fuerza = 2;
             vivo = true;
             //inventario.itemsEnPosesion.Add(new Cimitarra()); // TODO : aquí se añadirá el equipo por defecto
-            inicializarBoton();           
-        }
-
-        public void inicializarBoton() {
-            boton = new Button();
-            boton.BackColor = Color.Green;
             boton.Text = nombre;
+            boton.BackColor = Color.Green;
             boton.ForeColor = Color.White;
-            boton.AutoSize = true;
-            boton.Click += (s, e) => {
-                // Si lo último que ha hecho el jugador ha sido pulsar lanzar hechizo:
-                if (juego.personaje.ultimoBotonAccionPulsado == juego.pantalla.botonLanzarHechizo) {
-                    if (juego.personaje.hechizoCargado.necesitaObjetivo) {
-                        juego.personaje.hechizoCargado.lanzar(this);
-                    }
-                }
-            };
         }
 
         public override void realizarTurno() {

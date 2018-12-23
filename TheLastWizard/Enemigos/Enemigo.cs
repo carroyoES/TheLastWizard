@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using TheLastWizard.Objetos;
 
 namespace TheLastWizard.Enemigos {
@@ -20,6 +22,28 @@ namespace TheLastWizard.Enemigos {
             foreach (Item item in itemsExtra) {
                 inventario.itemsEnPosesion.Add(item);
             }
+            inicializarBoton();
+        }
+
+        public void inicializarBoton() {
+            boton = new Button();
+            boton.BackColor = Color.Green;
+            boton.Text = nombre;
+            boton.ForeColor = Color.White;
+            boton.AutoSize = true;
+            boton.Click += (s, e) => {
+                // Si lo último que ha hecho el jugador ha sido pulsar lanzar hechizo:
+                if (juego.personaje.ultimoBotonAccionPulsado == juego.pantalla.botonLanzarHechizo) {
+                    if (juego.personaje.hechizoCargado.necesitaObjetivo) {
+                        juego.personaje.hechizoCargado.lanzar(this);
+                    }
+                }
+                else if(juego.personaje.ultimoBotonAccionPulsado == juego.pantalla.botonSaquear) {
+                    // si el enemigo está muerto:
+                    juego.personaje.saquear(this);
+                    juego.personaje.ultimoBotonAccionPulsado = null;
+                }
+            };
         }
 
         public bool esquivar(int dificultad) {
