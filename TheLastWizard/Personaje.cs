@@ -20,6 +20,7 @@ namespace TheLastWizard {
         public Hechizo hechizoCargado;
         public Juego juego;
         public Enemigo enemigoActual; // TODO : List de enemigos
+        public Inventario inventario;
 
         public Personaje(Juego juego, Form1 pantalla) {
             this.juego = juego;
@@ -28,6 +29,7 @@ namespace TheLastWizard {
             this.reflejos = 5;
             this.puntosArmadura = 2;
             this.enemigoActual = null;
+            this.inventario = new Inventario(new List<Item>());
         }
 
         public void lanzarHechizo() {
@@ -47,16 +49,21 @@ namespace TheLastWizard {
         }
 
         public void saquear(ElementoEntorno elementoEntorno) {
-            // Si está saqueando un enemigo:
+            // Si está saqueando a un enemigo:
             if (elementoEntorno is Enemigo) {
-                if (!(elementoEntorno as Enemigo).vivo) {
+                if (!(elementoEntorno as Enemigo).vivo) {                  
                     Juego.agnadirTextoPanelCentral(elementoEntorno.nombre + " tiene:\n");
                     foreach (Item item in (elementoEntorno as Enemigo).inventario.itemsEnPosesion) {
-                        Juego.agnadirTextoPanelCentral(item.nombre + "\n");
+                        pantalla.flowLayoutPanelSaqueo.Controls.Add(item.boton);
                     }
+                    pantalla.flowLayoutPanelSaqueo.Visible = true;
                 }
                 // TODO : si está vivo
             }
+        }
+
+        public void agnadirAInventario(Item item) {
+            inventario.itemsEnPosesion.Add(item);
         }
     }
 }

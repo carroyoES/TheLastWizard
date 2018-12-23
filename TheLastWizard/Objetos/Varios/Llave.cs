@@ -10,6 +10,7 @@ namespace TheLastWizard.Objetos.Varios {
         public Llave(Juego juego, String descripcion) : base(juego){
             nombre = "Llave";
             this.descripcion = descripcion;
+            boton.Text = nombre;
         }
     }
 }

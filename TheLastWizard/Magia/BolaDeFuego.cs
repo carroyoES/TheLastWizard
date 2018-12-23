@@ -13,8 +13,9 @@ namespace TheLastWizard.Magia {
             this.descripcion = "Lanzas una bola de fuego que consume al Goblin\n";
             // TODO : Y si no hay enemigo se describe de forma distinta etc
             this.necesitaObjetivo = true;
-            this.dificultadEsquivar = 8;
-            this.dagno = Dados.unoDeSeis() + 2;
+            this.dificultadEsquivar = 0; // TODO : cambiar a 8
+            //this.dagno = Dados.unoDeSeis() + 2;
+            this.dagno = 100; // TODO : temporal para pruebas
             Juego.agnadirTextoPanelCentral("Selecciona un objetivo \n");
         }
 

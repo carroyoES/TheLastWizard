@@ -36,6 +36,7 @@
             this.botonUsar = new System.Windows.Forms.Button();
             this.botonHablar = new System.Windows.Forms.Button();
             this.botonSaquear = new System.Windows.Forms.Button();
+            this.flowLayoutPanelSaqueo = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // panelCentral
@@ -113,6 +114,7 @@
             this.flowLayoutPanelElementosEntorno.Name = "flowLayoutPanelElementosEntorno";
             this.flowLayoutPanelElementosEntorno.Size = new System.Drawing.Size(274, 373);
             this.flowLayoutPanelElementosEntorno.TabIndex = 7;
+            this.flowLayoutPanelElementosEntorno.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanelElementosEntorno_Paint);
             // 
             // botonAbrir
             // 
@@ -161,12 +163,21 @@
             this.botonSaquear.UseVisualStyleBackColor = true;
             this.botonSaquear.Click += new System.EventHandler(this.botonSaquear_Click);
             // 
+            // flowLayoutPanelSaqueo
+            // 
+            this.flowLayoutPanelSaqueo.Location = new System.Drawing.Point(431, 222);
+            this.flowLayoutPanelSaqueo.Name = "flowLayoutPanelSaqueo";
+            this.flowLayoutPanelSaqueo.Size = new System.Drawing.Size(523, 100);
+            this.flowLayoutPanelSaqueo.TabIndex = 13;
+            this.flowLayoutPanelSaqueo.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1410, 604);
+            this.Controls.Add(this.flowLayoutPanelSaqueo);
             this.Controls.Add(this.botonSaquear);
             this.Controls.Add(this.botonHablar);
             this.Controls.Add(this.botonUsar);
@@ -203,6 +214,7 @@
         public System.Windows.Forms.Button botonUsar;
         public System.Windows.Forms.Button botonHablar;
         public System.Windows.Forms.Button botonSaquear;
+        public System.Windows.Forms.FlowLayoutPanel flowLayoutPanelSaqueo;
     }
 }
 

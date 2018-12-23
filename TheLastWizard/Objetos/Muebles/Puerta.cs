@@ -26,8 +26,13 @@ namespace TheLastWizard.Objetos.Muebles {
             // TODO : mecanismo para regular cerradura
             // La zona que bloqueaba queda despejada
             if (cerradaConLlave) {
-                Juego.agnadirTextoPanelCentral("Está cerrada con llave\n");
-                juego.personaje.ultimoBotonAccionPulsado = null;
+                if (juego.personaje.inventario.contieneLlaveCorrecta(descripcionLlaveQueLaAbre)) {
+
+                }
+                else {
+                    Juego.agnadirTextoPanelCentral("Está cerrada con llave\n");
+                    juego.personaje.ultimoBotonAccionPulsado = null;
+                }
             }
             else {
                 cerrada = false;
