@@ -22,12 +22,13 @@ namespace TheLastWizard.Objetos.Muebles {
             boton.Text = nombre;
         }
 
-        public override void abrir() {
+        public override void intentarAbrir() {
             // TODO : mecanismo para regular cerradura
             // La zona que bloqueaba queda despejada
             if (cerradaConLlave) {
                 if (juego.personaje.inventario.contieneLlaveCorrecta(descripcionLlaveQueLaAbre)) {
-
+                    Juego.agnadirTextoPanelCentral("Utilizas la llave\n");
+                    abrir();
                 }
                 else {
                     Juego.agnadirTextoPanelCentral("Está cerrada con llave\n");
@@ -35,26 +36,30 @@ namespace TheLastWizard.Objetos.Muebles {
                 }
             }
             else {
-                cerrada = false;
-                juego.personaje.ultimoBotonAccionPulsado = null;
-                Juego.agnadirTextoPanelCentral("Abres la puerta\n");
-                switch (direccionALaQueDaPaso) {
-                    case "NORTE":
-                        juego.mapa.zonaActual.caminableNorte = true;
-                        break;
-                    case "ESTE":
-                        juego.mapa.zonaActual.caminableEste = true;
-                        break;
-                    case "SUR":
-                        juego.mapa.zonaActual.caminableSur = true;
-                        break;
-                    case "OESTE":
-                        juego.mapa.zonaActual.caminableOeste = true;
-                        break;
-                }
+                abrir();
             }
             // Se comprueba si está en un encuentro para que el enemigo realice su turno:
             juego.comprobarTurnoEnemigo();
+        }
+
+        public void abrir() {
+            cerrada = false;
+            juego.personaje.ultimoBotonAccionPulsado = null;
+            Juego.agnadirTextoPanelCentral("Abres la puerta\n");
+            switch (direccionALaQueDaPaso) {
+                case "NORTE":
+                    juego.mapa.zonaActual.caminableNorte = true;
+                    break;
+                case "ESTE":
+                    juego.mapa.zonaActual.caminableEste = true;
+                    break;
+                case "SUR":
+                    juego.mapa.zonaActual.caminableSur = true;
+                    break;
+                case "OESTE":
+                    juego.mapa.zonaActual.caminableOeste = true;
+                    break;
+            }
         }
     }
 }

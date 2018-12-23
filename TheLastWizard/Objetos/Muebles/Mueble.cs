@@ -28,7 +28,7 @@ namespace TheLastWizard.Objetos.Muebles {
                 // Si lo último que ha hecho el jugador ha sido pulsar abrir:
                 if(juego.personaje.ultimoBotonAccionPulsado == juego.pantalla.botonAbrir) {
                     if (this.sePuedeAbrir) {
-                        abrir();
+                        intentarAbrir();
                     }
                     else {
                         Juego.agnadirTextoPanelCentral("Este mueble no se puede abrir");
@@ -37,6 +37,6 @@ namespace TheLastWizard.Objetos.Muebles {
             };
         }
 
-        public virtual void abrir() { }
+        public virtual void intentarAbrir() { }
     }
 }

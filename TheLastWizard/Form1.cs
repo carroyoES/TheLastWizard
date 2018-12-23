@@ -86,5 +86,11 @@ namespace TheLastWizard {
         private void flowLayoutPanelElementosEntorno_Paint(object sender, PaintEventArgs e) {
 
         }
+
+        private void botonCerrarPanelSaqueo_Click(object sender, EventArgs e) {
+            flowLayoutPanelSaqueo.Controls.Clear();
+            flowLayoutPanelSaqueo.Visible = false;
+            botonCerrarPanelSaqueo.Visible = false;
+        }
     }
 }

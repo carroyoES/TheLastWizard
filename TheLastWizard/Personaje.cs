@@ -57,6 +57,7 @@ namespace TheLastWizard {
                         pantalla.flowLayoutPanelSaqueo.Controls.Add(item.boton);
                     }
                     pantalla.flowLayoutPanelSaqueo.Visible = true;
+                    pantalla.botonCerrarPanelSaqueo.Visible = true;
                 }
                 // TODO : si está vivo
             }

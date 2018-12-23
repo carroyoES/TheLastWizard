@@ -73,6 +73,7 @@ namespace TheLastWizard.Enemigos {
             boton.Text = "Cadáver de " + nombre;
             nombre = "Cadáver de " + nombre;
             juego.mapa.zonaActual.descripcionEncuentroActivada = false;
+            juego.personaje.enemigoActual = null;
         }
 
         public virtual void realizarTurno() {}

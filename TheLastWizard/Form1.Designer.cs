@@ -37,6 +37,8 @@
             this.botonHablar = new System.Windows.Forms.Button();
             this.botonSaquear = new System.Windows.Forms.Button();
             this.flowLayoutPanelSaqueo = new System.Windows.Forms.FlowLayoutPanel();
+            this.botonCerrarPanelSaqueo = new System.Windows.Forms.Button();
+            this.flowLayoutPanelSaqueo.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelCentral
@@ -165,11 +167,23 @@
             // 
             // flowLayoutPanelSaqueo
             // 
+            this.flowLayoutPanelSaqueo.Controls.Add(this.botonCerrarPanelSaqueo);
             this.flowLayoutPanelSaqueo.Location = new System.Drawing.Point(431, 222);
             this.flowLayoutPanelSaqueo.Name = "flowLayoutPanelSaqueo";
             this.flowLayoutPanelSaqueo.Size = new System.Drawing.Size(523, 100);
             this.flowLayoutPanelSaqueo.TabIndex = 13;
             this.flowLayoutPanelSaqueo.Visible = false;
+            // 
+            // botonCerrarPanelSaqueo
+            // 
+            this.botonCerrarPanelSaqueo.Location = new System.Drawing.Point(3, 3);
+            this.botonCerrarPanelSaqueo.Name = "botonCerrarPanelSaqueo";
+            this.botonCerrarPanelSaqueo.Size = new System.Drawing.Size(28, 27);
+            this.botonCerrarPanelSaqueo.TabIndex = 0;
+            this.botonCerrarPanelSaqueo.Text = "X";
+            this.botonCerrarPanelSaqueo.UseVisualStyleBackColor = true;
+            this.botonCerrarPanelSaqueo.Visible = false;
+            this.botonCerrarPanelSaqueo.Click += new System.EventHandler(this.botonCerrarPanelSaqueo_Click);
             // 
             // Form1
             // 
@@ -194,6 +208,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.flowLayoutPanelSaqueo.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,6 +230,7 @@
         public System.Windows.Forms.Button botonHablar;
         public System.Windows.Forms.Button botonSaquear;
         public System.Windows.Forms.FlowLayoutPanel flowLayoutPanelSaqueo;
+        public System.Windows.Forms.Button botonCerrarPanelSaqueo;
     }
 }
 
