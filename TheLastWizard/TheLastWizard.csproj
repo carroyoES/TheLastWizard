@@ -61,6 +61,7 @@
     <Compile Include="Mapa.cs" />
     <Compile Include="Objetos\Inventario.cs" />
     <Compile Include="Objetos\Item.cs" />
+    <Compile Include="Objetos\Muebles\Cofre.cs" />
     <Compile Include="Objetos\Muebles\Mueble.cs" />
     <Compile Include="Objetos\Muebles\Puerta.cs" />
     <Compile Include="Objetos\Varios\Llave.cs" />

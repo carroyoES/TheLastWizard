@@ -34,6 +34,9 @@
 - Ojo arcano: para ver lo que hay en otra zona
 *************************
 
+- Quizá lo que encuentra no es un libro, sino apuntes (explicaría las pocas páginas, y que falten muchas palabras aún). Fuente tipo escrito a mano.
+
+
 - En el libro de hechizos que encuentras al principio, se especifican los que se pueden
 lanzar por nivel del mago. Además tiene la gracia de irte aprendiendo las palabras a pronunciar
 (CADA VEZ MÁS COMPLEJAS), y da sensación de ir aprendiendo de verdad, al principio se consultará
